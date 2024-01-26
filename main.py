@@ -14,7 +14,8 @@ p.setAdditionalSearchPath(pybullet_data.getDataPath())
 pandaId1 = p.loadURDF("franka_panda/panda.urdf", useFixedBase=True)
 pandaId2 = p.loadURDF("franka_panda/panda.urdf", useFixedBase=True, basePosition=[0,1,0])
 plane = p.loadURDF("plane.urdf")
-blockId = p.loadURDF("cube_small.urdf", basePosition=[0.5,0.5,0])
+blockId1 = p.loadURDF("cube_small.urdf", basePosition=[0.5,0.5,0])
+blockId2 = p.loadURDF("cube_small.urdf", basePosition=[0.5,0.5,0])
 
 
 def capture_rgbd_image():
